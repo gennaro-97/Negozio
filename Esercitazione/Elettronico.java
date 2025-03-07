@@ -1,4 +1,4 @@
-public class Elettronico extends Prodotto implements Garantibile, Restituibile {
+public class Elettronico extends Prodotto implements Garantibile, IRestituibile {
     private int mesiGaranzia;
     private int mesiAcquisto;
 
@@ -15,7 +15,7 @@ public class Elettronico extends Prodotto implements Garantibile, Restituibile {
 
     @Override
     public String getDescrizione() {
-        return "Elettronico: " + nome + " - " + codice + " - " + mesiGaranzia + " - " + mesiAcquisto;
+        return "========ELETTRONICA========\n" + super.getDescrizione() + " - " + mesiGaranzia + " - " + mesiAcquisto;
     }
 
     @Override

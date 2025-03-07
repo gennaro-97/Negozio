@@ -54,7 +54,7 @@ public class GestoreProdotti {
 
         // Mostra i dati di tutti i prodotti
         for (Prodotto prodotto : prodotti) {
-            prodotto.getDescrizione();
+            System.out.println(prodotto.getDescrizione());
             System.out.println();
         }
     }

@@ -1,4 +1,4 @@
-public class Alimentare extends Prodotto implements Scontabile {
+public class Alimentare extends Prodotto implements IScontabile {
     private String dataScadenza;
     private boolean prossimoAllaScadenza;
 
@@ -15,7 +15,7 @@ public class Alimentare extends Prodotto implements Scontabile {
 
     @Override
     public String getDescrizione() {
-        return "Alimentare: " + nome + " - " + codice + " - " + dataScadenza + " - " + prossimoAllaScadenza;
+        return "========ALIMENTO========\n" + super.getDescrizione() + " - " + dataScadenza + " - " + prossimoAllaScadenza;
     }
 
     @Override

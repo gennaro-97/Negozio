@@ -1,4 +1,4 @@
-public class Abbigliamento extends Prodotto implements Restituibile {
+public class Abbigliamento extends Prodotto implements IRestituibile {
     private String taglia;
     private String colore;
     private int giorniAcquisto;
@@ -17,7 +17,7 @@ public class Abbigliamento extends Prodotto implements Restituibile {
 
     @Override
     public String getDescrizione() {
-        return "Abbigliamento: " + nome + " - " + codice + " - " + taglia + " - " + colore + " - " + giorniAcquisto;
+        return "========ABBIGLIAMENTO========\n" + super.getDescrizione() + " - " + taglia + " - " + colore + " - " + giorniAcquisto;
     }
 
     @Override
